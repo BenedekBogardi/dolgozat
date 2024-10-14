@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title><%= message %></title>
+    <title>Szállásfoglalás - Bogárdi Benedek</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
-    <p><%= message %></p>
     Név:<br>
     <form method="post">
-      <input type="text" name="nev"><br><br>
+      <input type="text" name="nev" value=<%=data.nev%>><br><br>
       E-mail cím:<br>
-      <input type="email" name="emailCim"><br><br>
+      <input type="email" name="emailCim" value=<%=data.emailCim%>><br><br>
       Dátum és időpont:<br>
-      <input type="datetime" name="datum"><br><br>
+      <input type="date" name="datum" value=<%=data.datum%>><br><br>
       Vendégek:<br>
-      <input type="number" name="vendegSzam"><br><br>
+      <input type="number" name="vendegSzam" value=<%=data.vendegSzam%>><br><br>
       <input type="button" name="beker" value="Beküldés">
     </form>
+
 </body>
 </html>
